@@ -95,4 +95,61 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void testSetANDgetFirstInit(){
+        Person Person = new Person();
+
+        String name = "charlotte";
+        char expected = 'c';
+
+        Person.setFirstInit(name);
+        char actual = Person.getFirstInit();
+        Assert.assertEquals(expected, actual);
+
+    }
+    @Test
+    public void testSetANDgetLikesCoding(){
+        Person Person = new Person();
+
+        boolean preference = true;
+        boolean expected = preference;
+        Person.setLikesCoding(preference);
+
+        boolean actual = Person.getLikesCoding();
+        Assert.assertEquals(expected, actual);
+
+    }
+    @Test
+    public void testSetANDgetIsAlive(){
+        Person Person = new Person();
+
+        boolean state = true;
+        boolean expected = state;
+        Person.setIsAlive(state);
+
+        boolean actual = Person.getIsAlive();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testSetANDgetHeight(){
+        Person Person = new Person();
+
+        double height = 6.02;
+        double expected = height;
+        Person.setHeight(height);
+
+        double actual = Person.getHeight();
+        Assert.assertEquals(expected, actual,actual);
+    }
+    @Test
+    public void testSetANDgetNationality(){
+        Person Person = new Person();
+
+        String nationality = "American";
+        String expected = nationality;
+        Person.setNationality(nationality);
+
+        String actual = Person.getNationality();
+        Assert.assertEquals(expected, actual);
+    }
 }
